@@ -20,7 +20,7 @@ $ docker run -ti --rm openshift-cli-docker
 ```
 - Optionally add an alias to your local profile so you can run the container as a cli
 ```bash
-$ alias oc='docker run --rm -ti openshift-oc-docker oc'
+$ alias oc='docker run --rm -ti openshift-cli-docker oc'
 $ oc version
 ```
 
