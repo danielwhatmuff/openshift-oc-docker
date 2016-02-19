@@ -12,24 +12,24 @@
 
 - Build the image using docker
 ```bash
-$ docker build -t openshift-cli-docker .
+$ docker build -t openshift-oc-docker .
 ```
 - Run the container
 ```bash
-$ docker run -ti --rm openshift-cli-docker oc version
+$ docker run -ti --rm openshift-oc-docker oc version
 ```
 - Optionally add an alias to your local profile so you can run the container as a cli (you may also want to mount kube config or pass env vars...)
 ```bash
-$ alias oc='docker run --rm -ti openshift-cli-docker oc'
+$ alias oc='docker run --rm -ti openshift-oc-docker oc'
 $ oc version
 ```
 
 # Alternatively, you can use the Docker Hub automated build
 
-[![](https://badge.imagelayers.io/danielwhatmuff/openshift-cli-docker:latest.svg)](https://imagelayers.io/?images=danielwhatmuff/openshift-cli-docker:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/danielwhatmuff/openshift-oc-docker:latest.svg)](https://imagelayers.io/?images=danielwhatmuff/openshift-oc-docker:latest 'Get your own badge on imagelayers.io')
 
 ```bash
-$ docker pull danielwhatmuff/openshift-cli-docker
+$ docker pull danielwhatmuff/openshift-oc-docker
 ```
 
 ### Contributing
