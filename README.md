@@ -18,6 +18,11 @@ $ docker build -t openshift-cli-docker .
 ```bash
 $ docker run -ti --rm openshift-cli-docker
 ```
+- Optionally add an alias to your local profile so you can run the container as a cli
+```bash
+$ alias oc='docker run --rm -ti openshift-oc-docker oc'
+$ oc version
+```
 
 # Alternatively, you can use the Docker Hub automated build
 
