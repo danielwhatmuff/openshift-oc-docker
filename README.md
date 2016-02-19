@@ -2,7 +2,7 @@
 
 # Summary
 
-- A Docker build for the oc command line tool, used to control Openshift. For more info, see [oc](https://docs.openshift.com/enterprise/3.0/cli_reference/get_started_cli.html)
+- A Docker build for the oc command line tool, used to control Openshift. For more info, see [Get Started with the CLI](https://docs.openshift.com/enterprise/3.0/cli_reference/get_started_cli.html)
 
 # Requirements
 
