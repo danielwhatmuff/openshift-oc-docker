@@ -16,9 +16,9 @@ $ docker build -t openshift-cli-docker .
 ```
 - Run the container
 ```bash
-$ docker run -ti --rm openshift-cli-docker
+$ docker run -ti --rm openshift-cli-docker oc version
 ```
-- Optionally add an alias to your local profile so you can run the container as a cli
+- Optionally add an alias to your local profile so you can run the container as a cli (you may also want to mount kube config or pass env vars...)
 ```bash
 $ alias oc='docker run --rm -ti openshift-cli-docker oc'
 $ oc version
