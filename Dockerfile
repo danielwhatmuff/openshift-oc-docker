@@ -10,6 +10,7 @@ RUN apk-install curl ca-certificates && \
     tar zxvf /tmp/oc.tar.gz -C /tmp/ && \ 
     mv /tmp/openshift-origin-client-tools-${OS_CLI_VERSION}-${OS_TAG}-linux-64bit/oc /usr/bin/ && \
     rm -rf /tmp/oc.tar.gz /tmp/openshift-origin-client-tools-${OS_CLI_VERSION}-${OS_TAG}-linux-64bit/ && \
+    rm -rf /root/.cache /var/cache/apk/ && \
     oc version
 
 CMD ["oc"]
